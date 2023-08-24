@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+sql.db_1:
+  schema: ""
+  driverClassName: "com.mysql.cj.jdbc.Driver"
+  username: "root"
+  password: "114514"
+  jdbcUrl: "jdbc:mysql://localhost:3306"
+  maxLifetime: 1000000
+
+mybatis.db_1:
+  mappers:
+    - "xyz.frish2021.login.dao.SQLInitiativeDao.class"
+    - "xyz.frish2021.login.dao.RegisterDao.class"
+    - "xyz.frish2021.login.dao.LoginDao.class"

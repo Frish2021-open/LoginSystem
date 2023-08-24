@@ -1,0 +1,34 @@
+<!-- author: Frish2021 -->
+<!-- createTime: 2023/08/20 18:46 -->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style/register.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/font-awesome.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>注册页面</title>
+    </head>
+    <body>
+        <div class="register-rect">
+            <br>
+            <a class="register-text">Register</a> <br>
+            
+            <a href="/" class="login-href">已有账号, 返回登录</a>
+            
+            <form action="/api/v1/register" method="get">
+                <label>
+                    <input type="text" name="username" placeholder="请输入注册用户名字" class="register-username-field">
+                    
+                    <input type="password" name="password" placeholder="请输入注册用户密码" class="register-password-field">
+                    
+                    <input type="password" name="passwordc" placeholder="请确定注册用户密码" class="register-passwordc-field">
+                    
+                    <input type="submit" value="&#xf00c 确定" class="register-submit-button fa">
+                </label>
+            </form>
+        </div>
+
+    </body>
+</html>

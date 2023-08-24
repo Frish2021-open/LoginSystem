@@ -1,0 +1,33 @@
+<!-- author: Frish2021 -->
+<!-- createTime: 2023/08/20 13:06 -->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style/index.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/font-awesome.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>登录界面</title>
+    </head>
+    
+    <body>
+        
+        <div class="login-rect">
+            <br>
+            <a class="login-text">Login in</a> <br>
+            
+            <form action="/api/v1/login" method="get">
+                <label>
+                    <input type="text" name="username" placeholder="请输入用户名字" class="login-username-field">
+                    
+                    <input type="password" name="password" placeholder="请输入用户密码" class="login-password-field">
+                    
+                    <input type="submit" value='&#xf00c 确定' class="login-submit-button fa">
+                </label>
+            </form>
+            
+            <a href="/register" class="register-href">什么?没有账号, 点击注册</a>
+        </div>
+    </body>
+</html>
